@@ -1,33 +1,9 @@
+const resourceService = require('../services/resourceService')
 module.exports = {
     'GET /': async (ctx, next) => {
-        const songNames = ['林志炫 - your eyes.mp3',
-            'Olivia Ong - Sometimes When We Touch.flac',
-            'Queen - Love of My Life.flac',
-            'Tamas Wells - Valder Fields.flac',
-            '于文文 - 体面.flac',
-            '倍賞千恵子 - 人生旋转木马.flac',
-            '周传雄 - 冬天的秘密.flac',
-            '岑宁儿 - 追光者.flac',
-            '岸部眞明 - Time travel.flac',
-            '林志炫 - 空.flac',
-            '毛不易 - 平凡的一天.flac',
-            '米津玄師 - Lemon.flac',
-            '陈淑桦 - 滚滚红尘.flac',
-            '黄阅 - 折子戏.flac',
-            '齐秦 - 花祭.flac',
-            '齐豫 - 橄榄树.flac']
+        const songNames = resourceService.getMusicList()
 
-        const imageNames = [
-            '026d3f336f4a6669a4a27be624c4dbe3.jpg',
-            '6f5d0946a1a9ebe1382a83aa2504d664.jpg',
-            '0d469778b0dbb0705f5abcf1e5405a56.jpg',
-            '80b15a183d344448784fbfed4f66da34.jpg',
-            '21300375f53e7c8b1f6aa85f17b1cc0e.jpg',
-            '80e4d63047a6394a87596b2e9a36496a.jpg',
-            '4141b6a8e67f68a41ef8fefeb982155c.jpg',
-            '878899ef9bf07bf129763e99dc56f833.jpg',
-            '450338370027e84bc7a3c7f83fddcc14.jpg',
-            'c41e2dd6bbf2c2f10d1ad399276d37aa.jpg']
+        const imageNames = resourceService.getImageList()
 
 
         const songs = songNames.map(name => {

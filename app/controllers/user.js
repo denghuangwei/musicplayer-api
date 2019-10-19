@@ -2,7 +2,6 @@ const jwt = require('jsonwebtoken')
 const secret = 'dh-secret'
 module.exports = {
     'POST /login': async (ctx, next) => {
-        console.log(1112312)
         const { username, password } = ctx.request.body
         const token = jwt.sign({
             username

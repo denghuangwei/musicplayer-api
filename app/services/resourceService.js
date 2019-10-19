@@ -1,0 +1,47 @@
+module.exports = {
+    getImageList() {
+        return [
+            'WechatIMG1042.jpeg',
+            'WechatIMG1045.jpeg',
+            'WechatIMG1048.jpeg',
+            'WechatIMG1051.jpeg',
+            'WechatIMG1043.png',
+            'WechatIMG1046.jpeg',
+            'WechatIMG1049.jpeg',
+            'WechatIMG1044.jpeg',
+            'WechatIMG1047.jpeg',
+            'WechatIMG1050.jpeg',
+        ]
+    },
+    getMusicList() {
+        return ['任贤齐、王子文 - 时光诛仙.mp3',
+            '冯提莫 - PLANET.mp3',
+            '冯提莫 - 刚好遇见你.mp3',
+            '冯提莫 - 学猫叫.mp3',
+            '双笙 - 马步谣.mp3',
+            '小贱（谭冰尧） - 说好了不见面 (伴奏).mp3',
+            '弦子 - 天真.mp3',
+            '弦子 - 舍不得.mp3',
+            '白冰、胡歌 - 美丽的神话.mp3',
+            '胡歌 - 光棍.mp3',
+            '胡歌 - 风起时.mp3',
+            '花粥 - 盗将行.mp3',
+            '苏曦汐_安慕汐、汪苏泷 - 有点甜.mp3',
+            '林志炫 - your eyes.mp3',
+            'Olivia Ong - Sometimes When We Touch.flac',
+            'Queen - Love of My Life.flac',
+            'Tamas Wells - Valder Fields.flac',
+            '于文文 - 体面.flac',
+            '倍賞千恵子 - 人生旋转木马.flac',
+            '周传雄 - 冬天的秘密.flac',
+            '岑宁儿 - 追光者.flac',
+            '岸部眞明 - Time travel.flac',
+            '林志炫 - 空.flac',
+            '毛不易 - 平凡的一天.flac',
+            '米津玄師 - Lemon.flac',
+            '陈淑桦 - 滚滚红尘.flac',
+            '黄阅 - 折子戏.flac',
+            '齐秦 - 花祭.flac',
+            '齐豫 - 橄榄树.flac']
+    }
+}

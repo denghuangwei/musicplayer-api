@@ -1,3 +1,9 @@
+const resourceService = require('../services/resourceService')
+const imageList = resourceService.getImageList()
+function getImage() {
+    const i = Math.floor(Math.random() * imageList.length)
+    return 'http://47.104.221.137/static/images/' + imageList[i]
+}
 module.exports = {
     'GET /': async (ctx, next) => {
         const data = {
@@ -59,6 +65,15 @@ module.exports = {
                 ]
             }
         }
+        data.recommendSongs.forEach(song => {
+            song.image = getImage()
+        })
+        data.newSongs.forEach(song => {
+            song.image = getImage()
+        })
+        data.countrySelecteds.selecteds.forEach(song => {
+            song.image = getImage()
+        })
         ctx.body = data
         await next()
     },
